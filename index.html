@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .black {
+      filter: brightness(0);
+    }
+  </style>
+</head>
+
+<body>
+  <label for="file">Downloading progress:</label>
+  <progress id="file" value="1" max="10"> 32% </progress>
+
+  <img class="black" src="./icon_kf.svg" alt="">
+</body>
+<script>
+  let routes = [
+    {
+      "path": "/",
+      "hidden": true,
+      "component": {
+        "name": "BasicLayout",
+        "components": {
+          "RightContent": {
+            "name": "RightContent",
+            "components": {
+              "AvatarDropdown": {
+                "name": "AvatarDropdown",
+                "props": {
+                  "currentUser": {},
+                  "menu": {
+                    "default": true
+                  }
+                },
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "_scopeId": "data-v-460c8b16",
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+              }
+            },
+            "props": {
+              "prefixCls": {
+                "default": "ant-pro-global-header-index-action"
+              },
+              "isMobile": {},
+              "topMenu": {
+                "required": true
+              },
+              "theme": {
+                "required": true
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalHeader/RightContent.vue"
+          },
+          "GlobalFooter": {
+            "name": "ProGlobalFooter",
+            "components": {
+              "GlobalFooter": {
+                "name": "GlobalFooter",
+                "props": {
+                  "links": {},
+                  "copyright": {
+                    "type": null
+                  }
+                }
+              }
+            },
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalFooter/index.vue"
+          }
+        },
+        "computed": {},
+        "methods": {},
+        "staticRenderFns": [],
+        "_compiled": true,
+        "beforeCreate": [
+          null
+        ],
+        "beforeDestroy": [
+          null
+        ],
+        "__file": "client/components/layout/BasicLayout.vue"
+      },
+      "meta": {
+        "title": "首页"
+      },
+      "children": [
+        {
+          "path": "/",
+          "redirect": "/page/dashboard",
+          "meta": {
+            "title": ""
+          }
+        }
+      ]
+    },
+    {
+      "path": "/page",
+      "hidden": true,
+      "component": {
+        "name": "BasicLayout",
+        "components": {
+          "RightContent": {
+            "name": "RightContent",
+            "components": {
+              "AvatarDropdown": {
+                "name": "AvatarDropdown",
+                "props": {
+                  "currentUser": {},
+                  "menu": {
+                    "default": true
+                  }
+                },
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "_scopeId": "data-v-460c8b16",
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+              }
+            },
+            "props": {
+              "prefixCls": {
+                "default": "ant-pro-global-header-index-action"
+              },
+              "isMobile": {},
+              "topMenu": {
+                "required": true
+              },
+              "theme": {
+                "required": true
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalHeader/RightContent.vue"
+          },
+          "GlobalFooter": {
+            "name": "ProGlobalFooter",
+            "components": {
+              "GlobalFooter": {
+                "name": "GlobalFooter",
+                "props": {
+                  "links": {},
+                  "copyright": {
+                    "type": null
+                  }
+                }
+              }
+            },
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalFooter/index.vue"
+          }
+        },
+        "computed": {},
+        "methods": {},
+        "staticRenderFns": [],
+        "_compiled": true,
+        "beforeCreate": [
+          null
+        ],
+        "beforeDestroy": [
+          null
+        ],
+        "__file": "client/components/layout/BasicLayout.vue"
+      },
+      "meta": {
+        "title": "首页"
+      },
+      "children": [
+        {
+          "path": "dashboard",
+          "meta": {
+            "title": ""
+          }
+        }
+      ]
+    },
+    {
+      "path": "/page/p",
+      "component": {
+        "name": "RouteView"
+      },
+      "meta": {
+        "title": "产品"
+      },
+      "children": [
+        {
+          "path": "announcemnet",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "公告系统"
+          },
+          "redirect": "/page/p/announcemnet/list",
+          "children": [
+            {
+              "path": "list",
+              "name": "announcemnet/list",
+              "meta": {
+                "title": "列表"
+              },
+              "hideChildrenInMenu": true,
+              "children": [
+                {
+                  "path": ":opentype",
+                  "name": "announcemnet/edit",
+                  "meta": {
+                    "title": "详细"
+                  },
+                  "hidden": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "announceEx",
+          "hidden": true
+        },
+        {
+          "path": "message",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "消息通知"
+          },
+          "redirect": "/page/p/message/index",
+          "children": [
+            {
+              "path": "index",
+              "name": "message_index",
+              "meta": {
+                "title": "消息通知下发"
+              },
+              "hidden": true
+            },
+            {
+              "path": "program_index",
+              "name": "message/index",
+              "meta": {
+                "title": "站内信下发"
+              }
+            },
+            {
+              "path": "template_msg",
+              "name": "templatemMsg/index",
+              "meta": {
+                "title": "模板消息下发"
+              }
+            },
+            {
+              "path": "message_record",
+              "name": "message_record",
+              "meta": {
+                "title": "历史下发纪录"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/page/t",
+      "component": {
+        "name": "RouteView"
+      },
+      "meta": {
+        "title": "技术"
+      },
+      "children": [
+        {
+          "path": "demo",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "示例"
+          },
+          "children": [
+            {
+              "path": "form/basic",
+              "name": "form/basic",
+              "meta": {
+                "title": "基础表单"
+              }
+            },
+            {
+              "path": "list/basic",
+              "name": "list/basic",
+              "meta": {
+                "title": "基础列表"
+              }
+            },
+            {
+              "path": "detail/basic",
+              "name": "detail/basic",
+              "meta": {
+                "title": "基础详情页"
+              }
+            },
+            {
+              "path": "result/error",
+              "name": "result/error",
+              "meta": {
+                "title": "错误页"
+              }
+            },
+            {
+              "path": "result/success",
+              "name": "result/success",
+              "meta": {
+                "title": "成功页"
+              }
+            },
+            {
+              "path": "detail/advanced",
+              "name": "detail/advanced",
+              "meta": {
+                "title": "高级详情页"
+              }
+            },
+            {
+              "path": "list/card",
+              "name": "list/card",
+              "meta": {
+                "title": "卡片列表"
+              }
+            },
+            {
+              "path": "list/table",
+              "name": "list/table",
+              "meta": {
+                "title": "查询列表"
+              }
+            },
+            {
+              "path": "form/stepForm",
+              "name": "form/stepForm",
+              "meta": {
+                "title": "分步表单"
+              }
+            },
+            {
+              "path": "form/advanced",
+              "name": "form/advanced",
+              "meta": {
+                "title": "高级表单"
+              }
+            }
+          ]
+        },
+        {
+          "path": "log",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "系统记录"
+          },
+          "children": [
+            {
+              "path": "log/list",
+              "name": "log/list",
+              "meta": {
+                "title": "操作记录"
+              }
+            }
+          ]
+        },
+        {
+          "path": "publish",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "发布系统"
+          },
+          "redirect": "/page/t/publish/checkoutBill",
+          "children": [
+            {
+              "path": "createBill",
+              "name": "publish/createBill",
+              "meta": {
+                "title": "建单"
+              }
+            },
+            {
+              "path": "publishBill/:deployBillId",
+              "name": "publish/deploy",
+              "meta": {
+                "title": "发布"
+              },
+              "hidden": true
+            },
+            {
+              "path": "publishResult/:deployBillId",
+              "name": "publish/result",
+              "meta": {
+                "title": "结果"
+              },
+              "hidden": true
+            },
+            {
+              "path": "checkoutBill",
+              "name": "publish/checkout",
+              "meta": {
+                "title": "查单"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/page/o",
+      "component": {
+        "name": "RouteView"
+      },
+      "meta": {
+        "title": "运营"
+      },
+      "children": [
+        {
+          "path": "base",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "基础信息"
+          },
+          "children": [
+            {
+              "path": "staff/uin",
+              "name": "staff/uin",
+              "meta": {
+                "title": "查询员工信息"
+              }
+            },
+            {
+              "path": "appid2bizuin",
+              "name": "appid2bizuin",
+              "meta": {
+                "title": "appid转bizuin"
+              }
+            },
+            {
+              "path": "uin2openid",
+              "name": "uin2openid",
+              "meta": {
+                "title": "uin转openid"
+              }
+            },
+            {
+              "path": "openid2uin",
+              "name": "openid2uin",
+              "meta": {
+                "title": "openid转uin"
+              }
+            }
+          ]
+        },
+        {
+          "path": "config",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "配置工具"
+          },
+          "redirect": "config/index",
+          "children": [
+            {
+              "path": "index",
+              "name": "config/index",
+              "meta": {
+                "title": "配置列表"
+              }
+            },
+            {
+              "path": "detail",
+              "name": "config/detail",
+              "meta": {
+                "title": "配置详情列表"
+              }
+            }
+          ]
+        },
+        {
+          "path": "coupon",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "优惠券"
+          },
+          "children": [
+            {
+              "path": "sendCoupon",
+              "name": "coupon/sendCoupon",
+              "meta": {
+                "title": "优惠券静默发券"
+              }
+            }
+          ]
+        },
+        {
+          "path": "disputed",
+          "component": {
+            "name": "BasicLayout",
+            "components": {
+              "RightContent": {
+                "name": "RightContent",
+                "components": {
+                  "AvatarDropdown": {
+                    "name": "AvatarDropdown",
+                    "props": {
+                      "currentUser": {},
+                      "menu": {
+                        "default": true
+                      }
+                    },
+                    "methods": {},
+                    "staticRenderFns": [],
+                    "_compiled": true,
+                    "_scopeId": "data-v-460c8b16",
+                    "beforeCreate": [
+                      null
+                    ],
+                    "beforeDestroy": [
+                      null
+                    ],
+                    "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+                  }
+                },
+                "props": {
+                  "prefixCls": {
+                    "default": "ant-pro-global-header-index-action"
+                  },
+                  "isMobile": {},
+                  "topMenu": {
+                    "required": true
+                  },
+                  "theme": {
+                    "required": true
+                  }
+                },
+                "computed": {},
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/RightContent.vue"
+              },
+              "GlobalFooter": {
+                "name": "ProGlobalFooter",
+                "components": {
+                  "GlobalFooter": {
+                    "name": "GlobalFooter",
+                    "props": {
+                      "links": {},
+                      "copyright": {
+                        "type": null
+                      }
+                    }
+                  }
+                },
+                "staticRenderFns": [],
+                "_compiled": true,
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalFooter/index.vue"
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/layout/BasicLayout.vue"
+          },
+          "meta": {
+            "title": "交易纠纷"
+          },
+          "children": [
+            {
+              "path": "miniProgram",
+              "meta": {
+                "title": "小程序"
+              },
+              "children": [
+                {
+                  "path": "programDataCenter",
+                  "name": "disputed/miniProgram/dataCenter",
+                  "meta": {
+                    "title": "客服处理数据中心"
+                  }
+                },
+                {
+                  "path": "programList",
+                  "name": "disputed/miniProgram/list",
+                  "meta": {
+                    "title": "纠纷单列表"
+                  }
+                }
+              ]
+            },
+            {
+              "path": "miniShop",
+              "name": "disputed/miniShop",
+              "meta": {
+                "title": "小商店"
+              },
+              "children": [
+                {
+                  "path": "shopDataCenter",
+                  "name": "disputed/miniShop/dataCenter",
+                  "meta": {
+                    "title": "客服处理数据中心"
+                  }
+                },
+                {
+                  "path": "shopList",
+                  "name": "disputed/miniShop/list",
+                  "meta": {
+                    "title": "纠纷单列表"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/page/complaint",
+      "component": {
+        "name": "BasicLayout",
+        "components": {
+          "RightContent": {
+            "name": "RightContent",
+            "components": {
+              "AvatarDropdown": {
+                "name": "AvatarDropdown",
+                "props": {
+                  "currentUser": {},
+                  "menu": {
+                    "default": true
+                  }
+                },
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "_scopeId": "data-v-460c8b16",
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+              }
+            },
+            "props": {
+              "prefixCls": {
+                "default": "ant-pro-global-header-index-action"
+              },
+              "isMobile": {},
+              "topMenu": {
+                "required": true
+              },
+              "theme": {
+                "required": true
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalHeader/RightContent.vue"
+          },
+          "GlobalFooter": {
+            "name": "ProGlobalFooter",
+            "components": {
+              "GlobalFooter": {
+                "name": "GlobalFooter",
+                "props": {
+                  "links": {},
+                  "copyright": {
+                    "type": null
+                  }
+                }
+              }
+            },
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalFooter/index.vue"
+          }
+        },
+        "computed": {},
+        "methods": {},
+        "staticRenderFns": [],
+        "_compiled": true,
+        "beforeCreate": [
+          null
+        ],
+        "beforeDestroy": [
+          null
+        ],
+        "__file": "client/components/layout/BasicLayout.vue"
+      },
+      "meta": {
+        "title": "交易纠纷"
+      },
+      "redirect": "complaint/list",
+      "children": [
+        {
+          "path": "list/authority",
+          "name": "complaint/list/authority",
+          "meta": {
+            "title": "客服权限管理与质量监控"
+          },
+          "hideChildrenInMenu": true,
+          "component": {
+            "name": "routeReplaceSelf",
+            "computed": {}
+          },
+          "children": [
+            {
+              "path": "recordOrderHand",
+              "name": "complaint/authority/recordOrderHand",
+              "meta": {
+                "title": ""
+              },
+              "hidden": true,
+              "keepAlive": false
+            }
+          ]
+        },
+        {
+          "path": "list/thirdparty",
+          "name": "complaint/list/thirdparty",
+          "meta": {
+            "title": "小程序-分层商家纠纷单列表",
+            "channel": 2,
+            "nokfflag": 1
+          },
+          "hideChildrenInMenu": true,
+          "component": {
+            "name": "routeReplaceSelf",
+            "computed": {}
+          },
+          "children": [
+            {
+              "path": "orderInfo",
+              "name": "complaint/thirdparty/orderInfo",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            },
+            {
+              "path": "detail",
+              "name": "complaint/thirdparty/detail",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            }
+          ]
+        },
+        {
+          "path": "list/weappNew",
+          "name": "complaint/list/weappNew",
+          "meta": {
+            "title": "小程序-新纠纷单列表",
+            "channel": 2,
+            "nokfflag": 0
+          },
+          "hideChildrenInMenu": true,
+          "component": {
+            "name": "routeReplaceSelf",
+            "computed": {}
+          },
+          "children": [
+            {
+              "path": "orderInfo",
+              "name": "complaint/weappNew/orderInfo",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            },
+            {
+              "path": "detail",
+              "name": "complaint/weappNew/detail",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            }
+          ]
+        },
+        {
+          "path": "list/minishopNew",
+          "name": "complaint/list/minishopNew",
+          "meta": {
+            "title": "小商店-新纠纷单列表",
+            "channel": 1,
+            "nokfflag": 0
+          },
+          "hideChildrenInMenu": true,
+          "component": {
+            "name": "routeReplaceSelf",
+            "computed": {}
+          },
+          "children": [
+            {
+              "path": "orderInfo",
+              "name": "complaint/minishopNew/orderInfo",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            },
+            {
+              "path": "detail",
+              "name": "complaint/minishopNew/detail",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            }
+          ]
+        },
+        {
+          "path": "list/weapp",
+          "name": "complaint/list/weapp",
+          "meta": {
+            "title": "小程序-纠纷单列表",
+            "channel": 2,
+            "nokfflag": 0
+          },
+          "hideChildrenInMenu": true,
+          "component": {
+            "name": "routeReplaceSelf",
+            "computed": {}
+          },
+          "children": [
+            {
+              "path": "orderInfo",
+              "name": "complaint/weapp/orderInfo",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            },
+            {
+              "path": "detail",
+              "name": "complaint/weapp/detail",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            }
+          ]
+        },
+        {
+          "path": "list/minishop",
+          "name": "complaint/list/minishop",
+          "meta": {
+            "title": "小商店-纠纷单列表",
+            "channel": 1,
+            "nokfflag": 0
+          },
+          "hideChildrenInMenu": true,
+          "component": {
+            "name": "routeReplaceSelf",
+            "computed": {}
+          },
+          "children": [
+            {
+              "path": "orderInfo",
+              "name": "complaint/minishop/orderInfo",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            },
+            {
+              "path": "detail",
+              "name": "complaint/minishop/detail",
+              "meta": {
+                "title": "纠纷单详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            }
+          ]
+        },
+        {
+          "path": "rules",
+          "name": "complaint/rules",
+          "meta": {
+            "title": "纠纷选项配置"
+          }
+        },
+        {
+          "path": "indemnity",
+          "name": "complaint/indemnity",
+          "meta": {
+            "title": "赔付申请"
+          },
+          "hidden": true
+        },
+        {
+          "path": "gurantee/cacellist",
+          "name": "complaint/gurantee/cacellist",
+          "meta": {
+            "title": "保证金退保审核"
+          }
+        },
+        {
+          "path": "gurantee/detail",
+          "name": "complaint/gurantee/detail",
+          "meta": {
+            "title": "保证金退保审核"
+          },
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "path": "/page/store",
+      "component": {
+        "name": "BasicLayout",
+        "components": {
+          "RightContent": {
+            "name": "RightContent",
+            "components": {
+              "AvatarDropdown": {
+                "name": "AvatarDropdown",
+                "props": {
+                  "currentUser": {},
+                  "menu": {
+                    "default": true
+                  }
+                },
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "_scopeId": "data-v-460c8b16",
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+              }
+            },
+            "props": {
+              "prefixCls": {
+                "default": "ant-pro-global-header-index-action"
+              },
+              "isMobile": {},
+              "topMenu": {
+                "required": true
+              },
+              "theme": {
+                "required": true
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalHeader/RightContent.vue"
+          },
+          "GlobalFooter": {
+            "name": "ProGlobalFooter",
+            "components": {
+              "GlobalFooter": {
+                "name": "GlobalFooter",
+                "props": {
+                  "links": {},
+                  "copyright": {
+                    "type": null
+                  }
+                }
+              }
+            },
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalFooter/index.vue"
+          }
+        },
+        "computed": {},
+        "methods": {},
+        "staticRenderFns": [],
+        "_compiled": true,
+        "beforeCreate": [
+          null
+        ],
+        "beforeDestroy": [
+          null
+        ],
+        "__file": "client/components/layout/BasicLayout.vue"
+      },
+      "meta": {
+        "title": "店铺"
+      },
+      "children": [
+        {
+          "path": "prorfile",
+          "name": "store/prorfile",
+          "meta": {
+            "title": "查询小商店信息"
+          }
+        },
+        {
+          "path": "goods/list",
+          "name": "store/goods/list",
+          "meta": {
+            "title": "查询商品列表"
+          }
+        },
+        {
+          "path": "goods/detail",
+          "name": "store/goods/detail",
+          "meta": {
+            "title": "查询商品详情"
+          },
+          "hidden": true
+        },
+        {
+          "path": "orderList",
+          "name": "store/orderList",
+          "meta": {
+            "title": "查询订单列表"
+          }
+        },
+        {
+          "path": "orderDetail",
+          "name": "store/orderDetail",
+          "meta": {
+            "title": "查询订单详情"
+          },
+          "hidden": true
+        },
+        {
+          "path": "coupon",
+          "name": "store/coupon",
+          "meta": {
+            "title": "查询优惠卷列表"
+          }
+        },
+        {
+          "path": "coupon/detail",
+          "name": "store/coupon/detail",
+          "meta": {
+            "title": "查询优惠卷详情"
+          },
+          "hidden": true
+        },
+        {
+          "path": "memberInfo",
+          "name": "store/memberInfo",
+          "meta": {
+            "title": "查询成员信息列表"
+          }
+        },
+        {
+          "path": "memberInfoOriginalData",
+          "name": "store/memberInfoOriginalData",
+          "meta": {
+            "title": "查询店铺权限信息"
+          }
+        },
+        {
+          "path": "afterSale",
+          "name": "store/afterSale",
+          "meta": {
+            "title": "查询售后信息列表"
+          }
+        },
+        {
+          "path": "withdrawList",
+          "name": "store/withdrawList",
+          "meta": {
+            "title": "查询提现信息列表"
+          }
+        },
+        {
+          "path": "withdrawList/detail",
+          "name": "store/withdrawList/detail",
+          "meta": {
+            "title": "提现信息详情"
+          },
+          "hidden": true
+        },
+        {
+          "path": "insuranceInfo",
+          "name": "store/insuranceInfo",
+          "meta": {
+            "title": "查询运费险保单信息"
+          }
+        },
+        {
+          "path": "linkShopList",
+          "name": "store/video/linkShopList",
+          "meta": {
+            "title": "查询视频号关联商店的列表"
+          }
+        },
+        {
+          "path": "listOfGoods",
+          "name": "store/video/listOfGoods",
+          "meta": {
+            "title": "查询商品同步视频号的列表"
+          }
+        },
+        {
+          "path": "resetCodeKey",
+          "name": "store/resetCodeKey",
+          "meta": {
+            "title": "重置秘钥"
+          }
+        },
+        {
+          "path": "openStore",
+          "name": "store/openStore",
+          "meta": {
+            "title": "开店"
+          }
+        },
+        {
+          "path": "afterSale/detail",
+          "name": "store/afterSale/detail",
+          "meta": {
+            "title": "查询售后信息详情"
+          },
+          "hidden": true
+        },
+        {
+          "path": "attributes",
+          "name": "store/attributes",
+          "meta": {
+            "title": "店铺属性"
+          }
+        },
+        {
+          "path": "orderflow",
+          "name": "store/orderflow",
+          "meta": {
+            "title": "资金流水"
+          },
+          "hideChildrenInMenu": true,
+          "component": {
+            "name": "routeReplaceSelf",
+            "computed": {}
+          },
+          "children": [
+            {
+              "path": "orderflowDetail",
+              "name": "store/orderflow/orderflowDetail",
+              "meta": {
+                "title": "流水详情"
+              },
+              "hidden": true,
+              "keepAlive": false
+            }
+          ]
+        },
+        {
+          "path": "whitelist",
+          "name": "store/whitelist",
+          "meta": {
+            "title": "白名单配置"
+          }
+        },
+        {
+          "path": "wxatrial/update",
+          "name": "wxatrial/update",
+          "meta": {
+            "title": "快速审核小程序"
+          },
+          "hidden": true
+        },
+        {
+          "path": "wxatrial/noAuth",
+          "name": "wxatrial/noAuth",
+          "meta": {
+            "title": ""
+          },
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "path": "/page/league",
+      "component": {
+        "name": "BasicLayout",
+        "components": {
+          "RightContent": {
+            "name": "RightContent",
+            "components": {
+              "AvatarDropdown": {
+                "name": "AvatarDropdown",
+                "props": {
+                  "currentUser": {},
+                  "menu": {
+                    "default": true
+                  }
+                },
+                "methods": {},
+                "staticRenderFns": [],
+                "_compiled": true,
+                "_scopeId": "data-v-460c8b16",
+                "beforeCreate": [
+                  null
+                ],
+                "beforeDestroy": [
+                  null
+                ],
+                "__file": "client/components/GlobalHeader/AvatarDropdown.vue"
+              }
+            },
+            "props": {
+              "prefixCls": {
+                "default": "ant-pro-global-header-index-action"
+              },
+              "isMobile": {},
+              "topMenu": {
+                "required": true
+              },
+              "theme": {
+                "required": true
+              }
+            },
+            "computed": {},
+            "methods": {},
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalHeader/RightContent.vue"
+          },
+          "GlobalFooter": {
+            "name": "ProGlobalFooter",
+            "components": {
+              "GlobalFooter": {
+                "name": "GlobalFooter",
+                "props": {
+                  "links": {},
+                  "copyright": {
+                    "type": null
+                  }
+                }
+              }
+            },
+            "staticRenderFns": [],
+            "_compiled": true,
+            "beforeCreate": [
+              null
+            ],
+            "beforeDestroy": [
+              null
+            ],
+            "__file": "client/components/GlobalFooter/index.vue"
+          }
+        },
+        "computed": {},
+        "methods": {},
+        "staticRenderFns": [],
+        "_compiled": true,
+        "beforeCreate": [
+          null
+        ],
+        "beforeDestroy": [
+          null
+        ],
+        "__file": "client/components/layout/BasicLayout.vue"
+      },
+      "meta": {
+        "title": "小程序联盟"
+      },
+      "children": [
+        {
+          "path": "activity/list",
+          "name": "league/activity/list",
+          "meta": {
+            "title": "运营位管理"
+          }
+        },
+        {
+          "path": "activity/info",
+          "name": "league/activity/info",
+          "meta": {
+            "title": "活动详情"
+          },
+          "hidden": true
+        },
+        {
+          "path": "reconciliation",
+          "name": "league/reconciliation",
+          "meta": {
+            "title": "数据对账"
+          }
+        },
+        {
+          "path": "announcement",
+          "name": "league/announcement",
+          "meta": {
+            "title": "公告管理"
+          },
+          "component": {
+            "name": "RouteView"
+          },
+          "children": [
+            {
+              "path": "promoter",
+              "name": "league/announcement/promoter",
+              "meta": {
+                "title": "推客端公告",
+                "userType": "promoter"
+              }
+            },
+            {
+              "path": "shop",
+              "name": "league/announcement/shop",
+              "meta": {
+                "title": "商家端公告",
+                "userType": "shop"
+              }
+            },
+            {
+              "path": "edit",
+              "name": "league/announcement/edit",
+              "meta": {
+                "title": "公告编辑",
+                "userType": "edit"
+              },
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/page/league/announcement/preview",
+      "name": "league/announcement/preview",
+      "hidden": true
+    },
+    {
+      "path": "*"
+    }
+  ]
+
+  // version 1
+  // function getRoutename(childRoutes/*array*/, parentRoute) {
+  //   let showRoutes = childRoutes.filter(child => !child.hidden)
+  //   let tempArr/*array*/ = []
+  //   showRoutes.forEach(item => {
+  //     if (item.children) {
+  //       item.children.forEach(childItem => {
+  //         childItem.fullpath = item?.fullpath || item.path + '/' + childItem.path
+  //         childItem.fullname = item?.fullname || item.meta?.title + '-' + childItem.meta?.title
+  //       })
+  //       tempArr = [...tempArr, ...getRoutename(item.children, item)]
+  //     } else {
+  //       tempArr.push({
+  //         path: item.fullpath + '/' + item.path,
+  //         name: item.fullname + '-' + item.meta?.title
+  //       })
+  //     }
+  //   })
+  //   return tempArr
+  // }
+
+  
+  function getRoutename(childRoutes/*array*/, parentRoute) {
+    let showRoutes = childRoutes.filter(child => !child.hidden)
+    let tempArr/*array*/ = []
+    showRoutes.forEach(item => {
+      // 如果有父级路由
+      if(parentRoute) {
+        item.fullname = parentRoute.fullname + '-' + item.meta?.title
+        item.fullpath = parentRoute.fullpath + '/' + item.path
+      } else {
+        item.fullname = item.meta?.title
+        item.fullpath = item.path
+      }
+      if (item.children&&item.children.some((item) => !item.hidden)) {
+        tempArr = [...tempArr, ...getRoutename(item.children, item)]
+      } else {
+        tempArr.push({
+          path: item.fullpath,
+          name: item.fullname
+        })
+      }
+    })
+    return tempArr.filter(item=>item.name)
+  }
+  console.log(getRoutename(routes))
+</script>
+
+</html>

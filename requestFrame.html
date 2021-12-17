@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .whole {
+      position: relative;
+    }
+    #box {
+      height: 100vh;
+      width: 100vw;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .outline {
+      padding: 24px;
+      border: solid 1px #1296db;
+      border-radius: 16px;
+      position: relative;
+      transition: all .3s;
+    }
+
+    .outline img {
+      height: 100px;
+      width: 100px;
+    }
+
+    .show_word {
+      position: absolute;
+      color: #1296db;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s ease;
+      opacity: 0;
+      font-size: 28px;
+    }
+
+    .shadow {
+      border: solid 1px #1296db;
+      border-radius: 16px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transition: all .3s;
+    }
+
+    .whole:hover .outline {
+      transform: rotate(-35deg) skew(20deg);
+      box-shadow: -1px 1px 10px #1296db;
+    }
+    .whole:hover img {
+      filter: blur(1px)
+    }
+    .whole:hover .shadow {
+      transform: translate(calc(-10px * var(--data-idx)), calc(10px * var(--data-idx)));
+      opacity: calc(var(--data-idx) * -0.2 + 1);
+      box-shadow: -1px 1px 10px #1296db;
+    }
+
+    .whole:hover .show_word {
+      opacity: 1;
+      transform: translateX(-50%) translateY(250%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div class="whole">
+      <div class="outline">
+        <img src="./earth.svg" alt="地球图标">
+        <span class="shadow shadow1" style="--data-idx:1"></span>
+        <span class="shadow shadow2" style="--data-idx:2"></span>
+        <span class="shadow shadow3" style="--data-idx:3"></span>
+        <span class="shadow shadow4" style="--data-idx:4"></span>
+        <span class="shadow shadow5" style="--data-idx:5"></span>
+      </div>
+      <span class="show_word">H~WY</span>
+    </div>
+  </div>
+</body>
+<!-- <script>
+
+  const element = document.getElementById('content');
+  let start;
+
+  function step(timestamp) {
+    if (start === undefined)
+      start = timestamp;
+    const elapsed = timestamp - start;
+    console.log(timestamp)
+
+    //这里使用`Math.min()`确保元素刚好停在200px的位置。
+    element.style.transform = 'translateY(' + elapsed + 'px)';
+    element.style.backgroundColor = '#' + (0xFFFFFF * Math.random() | 0).toString(16);
+    if (elapsed < 2000) { // 在两秒后停止动画
+      window.requestAnimationFrame(step);
+    }
+  }
+
+  window.requestAnimationFrame(step);
+</script> -->
+
+</html>

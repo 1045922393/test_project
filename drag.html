@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #outline {
+      width: 800px;
+      height: 500px;
+      border: 1px solid #000;
+    }
+
+    .picture {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="outline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="outline" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <img class="picture" id="picture1" src="./1.png" alt="This a picture" ondragstart="dragEvent(event)" draggable="true">
+  <img class="picture" id="picture2" src="./2.png" alt="This a picture" ondragstart="dragEvent(event)" draggable="true">
+  <img class="picture" id="picture3" src="./3.png" alt="This a picture" ondragstart="dragEvent(event)" draggable="true">
+  <img class="picture" id="picture4" src="./4.png" alt="This a picture" ondragstart="dragEvent(event)" draggable="true">
+  <img class="picture" id="picture5" src="./test.png" alt="This a picture" ondragstart="dragEvent(event)" draggable="true">
+
+  <span id="textid" class='text' ondragstart="dragEvent(event)" draggable="true">12312</span>
+</body>
+<script>
+  const pic = document.querySelector('#picture')
+  function dragEvent(e) {
+    e.dataTransfer.setData('Text', e.target.id)
+  }
+  function drop(ev) {
+    console.log(ev)
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("Text");
+    if (ev.target.tagName === 'DIV') {
+      ev.target.appendChild(document.getElementById(data));
+    } else if(ev.target.tagName ==='IMG') {
+      const box = ev.path.filter(item => item.tagName === 'DIV')[0]
+      box.insertBefore(document.getElementById(data), ev.target)
+      
+    }
+  }
+  function allowDrop(event) {
+    event.preventDefault();
+  }
+</script>
+
+</html>
